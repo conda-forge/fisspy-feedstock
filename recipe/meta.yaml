@@ -1,5 +1,5 @@
 {% set name = "fisspy" %}
-{% set version = "0.9.61" %}
+{% set version = "0.9.80" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b80ba11af1916e06e83d411909c6c5a7fa7e5060b2f6fa2cad2f90f6a6a29869
+  sha256: 96be71614cac87995fd8a7876254ece2f8b0f1af2a45f81129ad32f3c7571f8b
 
 build:
   noarch: python
@@ -27,7 +27,6 @@ requirements:
     - sunpy
     - numba
     - matplotlib
-    - ffmpeg
     - pillow
     - numpy
     - statsmodels
