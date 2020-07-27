@@ -5,7 +5,7 @@ Home: http://fiss.snu.ac.kr/
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python analysis tools for GST/FISS
 
