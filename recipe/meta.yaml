@@ -32,6 +32,9 @@ requirements:
     - pillow
     - numpy
     - statsmodels
+    - pyqt
+    - beuatifulsoup4
+    - pandas
 
 test:
   imports:
