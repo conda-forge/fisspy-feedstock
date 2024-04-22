@@ -33,7 +33,7 @@ requirements:
     - numpy
     - statsmodels
     - pyqt
-    - beuatifulsoup4
+    - beautifulsoup4
     - pandas
 
 test:
