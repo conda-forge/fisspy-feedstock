@@ -1,5 +1,5 @@
 {% set name = "fisspy" %}
-{% set version = "1.0.4" %}
+{% set version = "1.0.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1bf941aa914010123898f8556f48b60ece9554f90a7a3beede1bdfb9f732685e
+  sha256: 1b8fdfb27438a9370e6dc3a606440a3852d827cbc03632492c54fa62e824f056
 
 build:
   noarch: python
