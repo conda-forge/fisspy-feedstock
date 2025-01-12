@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 81ecdc00cbbb05cf3dd2dbd7ca40dcc07849c0077881dad819349ed3deb13e66
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - scipy
     - interpolation >=2.2.6
     - astropy
@@ -38,6 +38,8 @@ requirements:
     - ipython
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fisspy
     - fisspy.read
